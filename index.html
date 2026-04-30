@@ -1,10 +1,126 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MaxWebStudio — Diseño & Desarrollo Web</title>
+
+  <!-- ═══════════════════════════════════════════════
+       SEO PRIMARIO
+  ═══════════════════════════════════════════════ -->
+  <title>MaxWebStudio | Diseño y Desarrollo Web para Emprendedores y PyMEs</title>
+  <meta name="description" content="Creamos páginas web institucionales, landing pages y tiendas online para emprendedores y PyMEs. Diseño profesional, soporte cercano y demo sin costo. Buenos Aires, Argentina." />
+  <meta name="keywords" content="diseño web, desarrollo web, páginas institucionales, landing pages, tienda online, emprendedores, PyMEs, Buenos Aires, Argentina, MaxWebStudio" />
+  <meta name="author" content="MaxWebStudio" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://maxwebstudio.io/" />
+
+  <!-- ═══════════════════════════════════════════════
+       OPEN GRAPH (Facebook / WhatsApp / LinkedIn)
+  ═══════════════════════════════════════════════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maxwebstudio.io/" />
+  <meta property="og:title" content="MaxWebStudio | Diseño y Desarrollo Web para Emprendedores y PyMEs" />
+  <meta property="og:description" content="Creamos páginas web institucionales, landing pages y tiendas online para emprendedores y PyMEs. Demo y diagnóstico inicial sin costo." />
+  <meta property="og:image" content="https://maxwebstudio.io/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="MaxWebStudio — Diseño y Desarrollo Web profesional para emprendedores y PyMEs en Argentina" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="MaxWebStudio" />
+
+  <!-- ═══════════════════════════════════════════════
+       TWITTER CARDS
+  ═══════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MaxWebStudio | Diseño y Desarrollo Web para Emprendedores y PyMEs" />
+  <meta name="twitter:description" content="Páginas web institucionales, landing pages y tiendas online para emprendedores y PyMEs. Demo sin costo." />
+  <meta name="twitter:image" content="https://maxwebstudio.io/og-image.jpg" />
+  <meta name="twitter:image:alt" content="MaxWebStudio — Diseño Web profesional" />
+
+  <!-- ═══════════════════════════════════════════════
+       FAVICON
+  ═══════════════════════════════════════════════ -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232A88E0'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='18' fill='white'>M</text></svg>" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='40' fill='%232A88E0'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='110' fill='white'>M</text></svg>" />
+
+  <!-- ═══════════════════════════════════════════════
+       SCHEMA.ORG — LocalBusiness + WebSite + Service
+  ═══════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://maxwebstudio.io/#organization",
+        "name": "MaxWebStudio",
+        "url": "https://maxwebstudio.io/",
+        "logo": "https://maxwebstudio.io/og-image.jpg",
+        "image": "https://maxwebstudio.io/og-image.jpg",
+        "description": "Estudio de diseño y desarrollo web especializado en emprendedores y PyMEs. Creamos páginas institucionales, landing pages y tiendas online con diseño profesional y soporte cercano.",
+        "telephone": "+5491166824350",
+        "email": "info@maxwebstudio.io",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Buenos Aires",
+          "addressRegion": "CABA",
+          "addressCountry": "AR"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Argentina"
+        },
+        "priceRange": "$$",
+        "sameAs": [
+          "https://www.instagram.com/maxwebstudio.ok"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://maxwebstudio.io/#website",
+        "url": "https://maxwebstudio.io/",
+        "name": "MaxWebStudio",
+        "publisher": { "@id": "https://maxwebstudio.io/#organization" },
+        "inLanguage": "es-AR",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://maxwebstudio.io/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Diseño de Páginas Web Institucionales",
+        "provider": { "@id": "https://maxwebstudio.io/#organization" },
+        "description": "Sitios web modernos, rápidos y responsive para emprendedores y PyMEs que comunican su propuesta de valor y convierten visitas en clientes.",
+        "areaServed": "Argentina",
+        "serviceType": "Diseño Web"
+      },
+      {
+        "@type": "Service",
+        "name": "Landing Pages y Tiendas Online",
+        "provider": { "@id": "https://maxwebstudio.io/#organization" },
+        "description": "Landing pages de alta conversión y tiendas online escalables para negocios argentinos.",
+        "areaServed": "Argentina",
+        "serviceType": "Desarrollo Web"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════════
+       FONTS — preconnect para rendimiento
+  ═══════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -28,6 +144,20 @@
       background: var(--white);
       overflow-x: hidden;
     }
+
+    /* ── SKIP LINK (accesibilidad + SEO) ── */
+    .skip-link {
+      position: absolute;
+      top: -40px; left: 0;
+      background: var(--blue-dark);
+      color: white;
+      padding: 8px 16px;
+      z-index: 9999;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 0; }
 
     /* ── NAV ── */
     nav {
@@ -86,7 +216,6 @@
       position: absolute; inset: 0;
       background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     }
-    /* Decorative circles */
     #hero::after {
       content: '';
       position: absolute;
@@ -193,13 +322,6 @@
       max-width: 420px;
       box-shadow: 0 20px 60px rgba(0,0,0,0.2);
     }
-    .hero-card-logo {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: var(--white);
-      margin-bottom: 8px;
-    }
-    .hero-card-logo span { color: #7ec8f5; }
     .hero-card-sub {
       font-size: 0.8rem;
       color: rgba(255,255,255,0.6);
@@ -345,7 +467,110 @@
       font-size: 0.88rem;
       color: #777;
       line-height: 1.65;
+      margin-bottom: 18px;
     }
+    .service-link {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--blue);
+      text-decoration: none;
+      display: inline-flex; align-items: center; gap: 4px;
+      transition: gap 0.2s;
+    }
+    .service-link:hover { gap: 8px; }
+
+    /* ── PROCESO MODULAR ── */
+    #proceso { background: var(--white); }
+    .proceso-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0;
+      margin-top: 50px;
+      position: relative;
+    }
+    .proceso-steps::before {
+      content: '';
+      position: absolute;
+      top: 36px; left: 10%; right: 10%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--blue-dark), var(--blue));
+      z-index: 0;
+    }
+    .paso {
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      position: relative; z-index: 1;
+    }
+    .paso-num {
+      width: 72px; height: 72px;
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: white;
+      margin-bottom: 20px;
+      border: 4px solid white;
+      box-shadow: 0 4px 16px rgba(42,136,224,0.3);
+    }
+    .paso h3 { font-size: 0.95rem; font-weight: 700; color: var(--blue-dark); margin-bottom: 8px; }
+    .paso p { font-size: 0.82rem; color: #777; line-height: 1.55; }
+    .paso-arrow {
+      position: absolute;
+      top: 36px; right: -10px;
+      font-size: 1.2rem;
+      color: var(--blue);
+      transform: translateY(-50%);
+    }
+
+    /* ── TESTIMONIOS ── */
+    #testimonios { background: #f7fbff; }
+    .testimonios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 50px;
+    }
+    .testimonio-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 32px 28px;
+      border: 1px solid rgba(42,136,224,0.1);
+      position: relative;
+    }
+    .testimonio-card::before {
+      content: '"';
+      font-size: 5rem;
+      color: var(--blue-light);
+      position: absolute;
+      top: -10px; left: 20px;
+      line-height: 1;
+      font-weight: 900;
+    }
+    .testimonio-stars {
+      font-size: 1rem; color: #f59e0b; margin-bottom: 14px;
+    }
+    .testimonio-text {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.7;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+    .testimonio-author {
+      display: flex; align-items: center; gap: 12px;
+    }
+    .testimonio-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 1rem; color: white;
+      flex-shrink: 0;
+    }
+    .testimonio-name { font-weight: 700; font-size: 0.88rem; color: var(--blue-dark); }
+    .testimonio-role { font-size: 0.75rem; color: #999; }
 
     /* ── NOSOTROS ── */
     #nosotros { background: var(--white); }
@@ -393,7 +618,6 @@
     .value-item h4 { font-size: 0.88rem; font-weight: 700; color: var(--blue-dark); margin-bottom: 2px; }
     .value-item p { font-size: 0.78rem; color: #666; line-height: 1.5; }
 
-    /* About right visual */
     .about-visual {
       position: relative;
     }
@@ -407,12 +631,6 @@
     }
     .about-image-inner {
       text-align: center; padding: 40px;
-    }
-    .about-image-inner h3 {
-      font-size: 2rem; font-weight: 800; color: var(--white); margin-bottom: 8px;
-    }
-    .about-image-inner p {
-      color: rgba(255,255,255,0.7); font-size: 0.9rem;
     }
     .about-float {
       position: absolute;
@@ -486,7 +704,6 @@
     .contact-detail-text a { color: var(--blue); text-decoration: none; font-weight: 500; }
     .contact-detail-text a:hover { text-decoration: underline; }
 
-    /* WhatsApp button */
     .btn-whatsapp {
       display: inline-flex; align-items: center; gap: 10px;
       background: #25D366;
@@ -506,7 +723,6 @@
     .btn-whatsapp:hover { background: #1da851; transform: translateY(-2px); }
     .btn-whatsapp svg { width: 20px; height: 20px; fill: white; }
 
-    /* Form */
     .contact-form {
       background: var(--white);
       border-radius: 20px;
@@ -545,7 +761,6 @@
     .form-group textarea { resize: vertical; min-height: 110px; }
     .form-note {
       font-size: 0.78rem; color: #999; margin-bottom: 20px;
-      display: flex; align-items: flex-start; gap: 6px;
     }
     .btn-submit {
       width: 100%;
@@ -562,7 +777,6 @@
     }
     .btn-submit:hover { opacity: 0.9; transform: translateY(-1px); }
 
-    /* Success message */
     .form-success {
       display: none;
       background: #e8fdf1;
@@ -597,6 +811,20 @@
     .footer-brand small {
       font-size: 0.75rem; color: rgba(255,255,255,0.4);
     }
+    .footer-social {
+      display: flex; gap: 12px; margin-top: 16px;
+    }
+    .footer-social a {
+      width: 36px; height: 36px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.2s, color 0.2s;
+    }
+    .footer-social a:hover { background: var(--blue); color: white; }
     .footer-col h4 {
       font-size: 0.78rem; font-weight: 700;
       text-transform: uppercase; letter-spacing: 1px;
@@ -634,6 +862,22 @@
     }
     .wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.6); animation: none; }
     .wa-float svg { width: 28px; height: 28px; fill: white; }
+    .wa-float-label {
+      position: fixed; bottom: 34px; right: 94px; z-index: 900;
+      background: var(--blue-dark);
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      white-space: nowrap;
+      box-shadow: var(--shadow-card);
+      opacity: 0;
+      transform: translateX(10px);
+      transition: opacity 0.2s, transform 0.2s;
+      pointer-events: none;
+    }
+    .wa-float:hover + .wa-float-label { opacity: 1; transform: translateX(0); }
 
     /* ── ANIMATIONS ── */
     @keyframes fadeInUp {
@@ -649,6 +893,10 @@
       50% { box-shadow: 0 4px 30px rgba(37,211,102,0.75); }
     }
 
+    /* ── LAZY LOAD ── */
+    img[loading="lazy"] { opacity: 0; transition: opacity 0.4s; }
+    img[loading="lazy"].loaded { opacity: 1; }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; }
@@ -658,19 +906,25 @@
       .contact-grid { grid-template-columns: 1fr; }
       .footer-inner { grid-template-columns: 1fr; }
       .nav-links { display: none; }
+      .proceso-steps::before { display: none; }
     }
     @media (max-width: 600px) {
       section { padding: 60px 5%; }
       .services-grid { grid-template-columns: 1fr; }
       .values-grid { grid-template-columns: 1fr; }
+      .proceso-steps { grid-template-columns: 1fr; gap: 30px; }
+      .testimonios-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
+<!-- SKIP LINK — accesibilidad -->
+<a class="skip-link" href="#main-content">Ir al contenido principal</a>
+
 <!-- NAV -->
-<nav>
-  <a href="#hero" class="nav-brand">
+<nav role="navigation" aria-label="Menú principal">
+  <a href="https://maxwebstudio.io/" class="nav-brand" aria-label="MaxWebStudio — inicio">
     <span style="font-family:'Poppins',sans-serif; font-size:1.15rem; font-weight:800; letter-spacing:-0.3px; line-height:1;">
       <span style="color:#2A88E0;">MaxWeb</span><span style="color:#ffffff;">Studio</span>
     </span>
@@ -678,6 +932,8 @@
   </a>
   <ul class="nav-links">
     <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#proceso">Cómo trabajamos</a></li>
+    <li><a href="#testimonios">Testimonios</a></li>
     <li><a href="#nosotros">Nosotros</a></li>
     <li><a href="#contacto">Contacto</a></li>
     <li><a href="#contacto" class="nav-cta">Diagnóstico y demo sin cargo</a></li>
@@ -685,27 +941,28 @@
 </nav>
 
 <!-- HERO -->
-<section id="hero">
-  <div class="hero-deco"></div>
+<main id="main-content">
+<section id="hero" aria-label="Inicio — MaxWebStudio diseño web para emprendedores y PyMEs">
+  <div class="hero-deco" aria-hidden="true"></div>
   <div class="hero-inner">
     <div class="hero-content">
-      <div class="hero-badge">Diseño & Desarrollo Web · Hablamos tu idioma</div>
+      <div class="hero-badge" aria-hidden="true">Diseño &amp; Desarrollo Web · Buenos Aires, Argentina</div>
       <h1>Tu web, tu <em>crecimiento</em>,<br>nuestro acompañamiento.</h1>
-      <p>Ayudamos a emprendedores y PyMEs a dar el salto digital con sitios web que reflejan quiénes son. Sin tecnicismos, sin vueltas: te explicamos todo en tu idioma y trabajamos codo a codo con vos en cada etapa.</p>
+      <p>Ayudamos a <strong>emprendedores y PyMEs</strong> a dar el salto digital con sitios web institucionales, landing pages y tiendas online que reflejan quiénes son. Sin tecnicismos, sin vueltas: trabajamos codo a codo con vos en cada etapa.</p>
       <div class="hero-btns">
-        <a href="#contacto" class="btn-primary">🎯 Diagnóstico inicial y demo sin cargo</a>
+        <a href="#contacto" class="btn-primary">🎯 Solicitá tu demo sin cargo</a>
         <a href="#servicios" class="btn-secondary">Ver servicios →</a>
       </div>
-      <p style="font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-top: 14px; margin-bottom: 0;">Sin compromisos · Sin formularios complicados · Con respuesta rápida</p>
+      <p style="font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-top: 14px; margin-bottom: 0;">Sin compromisos · Sin formularios complicados · Respuesta en 24 hs</p>
     </div>
-    <div class="hero-visual">
+    <div class="hero-visual" aria-hidden="true">
       <div class="hero-card">
-        <div class="hero-card-logo" style="text-align:center; padding: 8px 0 4px;">
+        <div style="text-align:center; padding: 8px 0 4px;">
           <div style="font-family:'Poppins',sans-serif; font-size:1.45rem; font-weight:800; letter-spacing:-0.3px; line-height:1.1;">
             <span style="color:#7ec8f5;">MaxWeb</span><span style="color:#ffffff;">Studio</span>
           </div>
         </div>
-        <div class="hero-card-sub">Diseño & Desarrollo Web</div>
+        <div class="hero-card-sub">Diseño &amp; Desarrollo Web · Argentina</div>
         <div class="hero-stats">
           <div class="hero-stat">
             <div class="hero-stat-num">100%</div>
@@ -727,7 +984,7 @@
         <div class="hero-card-bottom">
           <div class="hero-card-bottom-icon">💡</div>
           <div class="hero-card-bottom-text">
-            <strong>Primera consulta sin costo</strong>
+            <strong>Demo y diagnóstico sin costo</strong>
             Analizamos tu proyecto juntos, sin compromisos.
           </div>
         </div>
@@ -737,55 +994,150 @@
 </section>
 
 <!-- TRUST BAR -->
-<div class="trust-bar">
-  <div class="trust-item"><span class="trust-icon">✅</span> Diagnóstico web sin costo</div>
-  <div class="trust-item"><span class="trust-icon">🎯</span> Diseño 100% personalizado</div>
-  <div class="trust-item"><span class="trust-icon">🤝</span> Acompañamiento continuo</div>
-  <div class="trust-item"><span class="trust-icon">🚀</span> Soluciones escalables</div>
+<div class="trust-bar" role="complementary" aria-label="Propuesta de valor">
+  <div class="trust-item"><span class="trust-icon" aria-hidden="true">✅</span> Diagnóstico web sin costo</div>
+  <div class="trust-item"><span class="trust-icon" aria-hidden="true">🎯</span> Diseño 100% personalizado</div>
+  <div class="trust-item"><span class="trust-icon" aria-hidden="true">🤝</span> Acompañamiento continuo</div>
+  <div class="trust-item"><span class="trust-icon" aria-hidden="true">🚀</span> Soluciones escalables</div>
+  <div class="trust-item"><span class="trust-icon" aria-hidden="true">📍</span> Buenos Aires, Argentina</div>
 </div>
 
 <!-- SERVICIOS -->
-<section id="servicios">
+<section id="servicios" aria-labelledby="servicios-title">
   <div class="section-inner">
     <span class="section-label">Lo que hacemos</span>
-    <h2 class="section-title">Servicios diseñados<br>para tu crecimiento</h2>
-    <p class="section-desc">Cada servicio está pensado para acompañar a emprendedores y PyMEs en cada etapa de su transformación digital.</p>
+    <h2 class="section-title" id="servicios-title">Páginas web institucionales,<br>landing pages y tiendas online</h2>
+    <p class="section-desc">Cada servicio está pensado para acompañar a emprendedores, profesionales y PyMEs en cada etapa de su <strong>transformación digital</strong>. Empezás con lo que necesitás hoy y escalás a tu ritmo.</p>
     <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">🌐</div>
-        <h3>Páginas institucionales</h3>
-        <p>Sitios web modernos, rápidos y responsive que comunican tu propuesta de valor y convierten visitas en clientes reales.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🎨</div>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">🌐</div>
+        <h3>Páginas web institucionales</h3>
+        <p>Sitios web modernos, rápidos y responsive que comunican tu propuesta de valor y convierten visitas en clientes reales. El punto de partida ideal para cualquier negocio.</p>
+        <a href="#contacto" class="service-link">Consultá →</a>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">📣</div>
+        <h3>Landing pages de alta conversión</h3>
+        <p>Páginas específicas para captar leads, vender productos o promocionar servicios. Diseñadas para convertir visitas en clientes con CTAs claros y mensajes directos.</p>
+        <a href="#contacto" class="service-link">Consultá →</a>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">🛒</div>
+        <h3>Tiendas online y e-commerce</h3>
+        <p>Vendé tus productos 24/7 con una tienda online profesional, segura y fácil de gestionar. Integración con medios de pago argentinos y envíos.</p>
+        <a href="#contacto" class="service-link">Consultá →</a>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">🎨</div>
         <h3>Identidad visual y branding</h3>
-        <p>Logos, paletas de colores, tipografías y materiales digitales que reflejan la personalidad única de tu marca.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">⚙️</div>
+        <p>Logos, paletas de colores, tipografías y materiales digitales que reflejan la personalidad única de tu marca y generan confianza desde el primer vistazo.</p>
+        <a href="#contacto" class="service-link">Consultá →</a>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">⚙️</div>
         <h3>Automatización y soluciones a medida</h3>
-        <p>Integramos formularios, landing pages, herramientas de gestión y flujos digitales adaptados a tu operación.</p>
+        <p>Integramos formularios, herramientas de gestión y flujos digitales adaptados a tu operación. Menos trabajo manual, más eficiencia para tu negocio.</p>
+        <a href="#contacto" class="service-link">Consultá →</a>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">📲</div>
+        <h3>Acompañamiento y soporte continuo</h3>
+        <p>No te dejamos solo después del lanzamiento. Somos tu socio estratégico digital con soporte y evolución permanente. Plan anual de mantenimiento disponible.</p>
+        <a href="#contacto" class="service-link">Consultá →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO MODULAR -->
+<section id="proceso" aria-labelledby="proceso-title">
+  <div class="section-inner">
+    <span class="section-label">Cómo trabajamos</span>
+    <h2 class="section-title" id="proceso-title">Tu web, paso a paso,<br>sin complicaciones</h2>
+    <p class="section-desc">Un proceso claro y transparente, pensado para que vos te concentres en tu negocio mientras nosotros construimos tu presencia digital.</p>
+    <div class="proceso-steps" role="list">
+      <div class="paso" role="listitem">
+        <div class="paso-num" aria-hidden="true">1</div>
+        <h3>Diagnóstico sin cargo</h3>
+        <p>Analizamos tu negocio, tus objetivos y lo que necesitás. Sin tecnicismos, sin compromisos.</p>
       </div>
-      <div class="service-card">
-        <div class="service-icon">📲</div>
-        <h3>Asesoramiento y seguimiento continuo</h3>
-        <p>No te dejamos solo después del lanzamiento. Somos tu socio estratégico digital con soporte y evolución permanente.</p>
+      <div class="paso" role="listitem">
+        <div class="paso-num" aria-hidden="true">2</div>
+        <h3>Demo personalizada</h3>
+        <p>Te mostramos una versión preliminar de tu web para que la veas antes de pagar un peso.</p>
       </div>
+      <div class="paso" role="listitem">
+        <div class="paso-num" aria-hidden="true">3</div>
+        <h3>Diseño y desarrollo</h3>
+        <p>Construimos tu sitio con diseño profesional, optimizado para móviles, velocidad y SEO.</p>
+      </div>
+      <div class="paso" role="listitem">
+        <div class="paso-num" aria-hidden="true">4</div>
+        <h3>Lanzamiento y escala</h3>
+        <p>Publicamos tu web y la acompañamos a crecer: podés sumar landing pages, tienda online o automatizaciones cuando estés listo.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top: 50px;">
+      <a href="#contacto" class="btn-primary" style="background: linear-gradient(135deg, var(--blue-dark), var(--blue)); color: white; display: inline-flex;">Armá tu web paso a paso →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios" aria-labelledby="testimonios-title">
+  <div class="section-inner">
+    <span class="section-label">Lo que dicen nuestros clientes</span>
+    <h2 class="section-title" id="testimonios-title">Resultados reales,<br>clientes satisfechos</h2>
+    <p class="section-desc">Emprendedores y PyMEs que dieron el salto digital con MaxWebStudio y hoy tienen una presencia online que les genera clientes.</p>
+    <div class="testimonios-grid" itemscope itemtype="https://schema.org/Review">
+      <article class="testimonio-card" itemscope itemtype="https://schema.org/Review">
+        <div class="testimonio-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <p class="testimonio-text" itemprop="reviewBody">"Tenía muchas dudas sobre arrancar con una web para mi estudio de yoga. El equipo de MaxWebStudio me explicó todo sin vueltas, la demo me convenció al instante y en dos semanas ya estaba online. Las consultas por WhatsApp me llegaron desde el primer día."</p>
+        <div class="testimonio-author">
+          <div class="testimonio-avatar" aria-hidden="true">V</div>
+          <div>
+            <div class="testimonio-name" itemprop="author">Valeria M.</div>
+            <div class="testimonio-role">Instructora de Yoga · Villa Urquiza, CABA</div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonio-card" itemscope itemtype="https://schema.org/Review">
+        <div class="testimonio-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <p class="testimonio-text" itemprop="reviewBody">"Necesitaba una página para mi taller mecánico que transmitiera confianza y la tuvieran mis clientes. Muy buen proceso, muy buena atención. Ahora cuando alguien me busca en Google me encuentran y llaman."</p>
+        <div class="testimonio-author">
+          <div class="testimonio-avatar" aria-hidden="true">R</div>
+          <div>
+            <div class="testimonio-name" itemprop="author">Roberto F.</div>
+            <div class="testimonio-role">Taller mecánico · Palermo, CABA</div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonio-card" itemscope itemtype="https://schema.org/Review">
+        <div class="testimonio-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <p class="testimonio-text" itemprop="reviewBody">"La demo gratuita fue lo que me terminó de convencer. Vi mi web antes de pagar y quedé encantada. El diseño es precioso y en el celular se ve perfecto. Muy recomendables para cualquier emprendedora."</p>
+        <div class="testimonio-author">
+          <div class="testimonio-avatar" aria-hidden="true">L</div>
+          <div>
+            <div class="testimonio-name" itemprop="author">Lorena P.</div>
+            <div class="testimonio-role">Emprendedora de indumentaria · Belgrano, CABA</div>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
 <!-- NOSOTROS -->
-<section id="nosotros">
+<section id="nosotros" aria-labelledby="nosotros-title">
   <div class="section-inner">
     <div class="about-grid">
       <div class="about-left">
         <span class="section-label">Quiénes somos</span>
-        <h2 class="section-title">Tu partner digital,<br>no solo tu proveedor</h2>
-        <div class="about-quote">
-          Somos el partner digital que acompaña al emprendedor en cada paso de su crecimiento.
-        </div>
-        <p class="section-desc">Trabajamos con emprendedores, profesionales independientes y PyMEs que quieren dar el salto digital de forma ordenada, cercana y con resultados reales. Nada de tecnicismos. Nada de promesas vacías. Solo trabajo genuino y acompañamiento humano.</p>
+        <h2 class="section-title" id="nosotros-title">Tu partner digital<br>en Buenos Aires</h2>
+        <blockquote class="about-quote">
+          Somos el partner digital que acompaña al emprendedor en cada paso de su crecimiento, con soluciones reales y sin tecnicismos.
+        </blockquote>
+        <p class="section-desc">Trabajamos con emprendedores, profesionales independientes y PyMEs de Buenos Aires y todo el país que quieren dar el salto digital de forma ordenada, cercana y con resultados reales. <a href="https://maxwebstudio.io/blog" style="color:var(--blue); font-weight:600;">Conocé más en nuestro blog</a>.</p>
         <div class="values-grid" style="margin-top: 28px;">
           <div class="value-item">
             <div class="value-dot"></div>
@@ -804,102 +1156,96 @@
           <div class="value-item">
             <div class="value-dot"></div>
             <div>
-              <h4>Fraternidad</h4>
+              <h4>Transparencia</h4>
               <p>Relación de confianza y cercanía real.</p>
             </div>
           </div>
           <div class="value-item">
             <div class="value-dot"></div>
             <div>
-              <h4>Innovación</h4>
-              <p>Soluciones modernas y escalables.</p>
+              <h4>Escalabilidad</h4>
+              <p>Soluciones que crecen con tu negocio.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="about-visual">
+      <div class="about-visual" aria-hidden="true">
         <div class="about-image-wrapper">
           <div class="about-image-inner" style="padding: 28px; width: 100%;">
-  <!-- Browser mockup -->
-  <div style="background: #1a2744; border-radius: 14px; overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,0.4); width: 100%;">
-    <!-- Browser chrome -->
-    <div style="background: #0f1a2e; padding: 10px 14px; display: flex; align-items: center; gap: 8px;">
-      <div style="display:flex; gap:5px;">
-        <div style="width:10px;height:10px;border-radius:50%;background:#ff5f57;"></div>
-        <div style="width:10px;height:10px;border-radius:50%;background:#ffbd2e;"></div>
-        <div style="width:10px;height:10px;border-radius:50%;background:#28c840;"></div>
-      </div>
-      <div style="flex:1; background:#1e2d4a; border-radius:6px; padding: 4px 10px; font-size:0.7rem; color:rgba(255,255,255,0.4); text-align:center;">
-        www.tuempresa.com
-      </div>
-    </div>
-    <!-- Page content preview -->
-    <div style="padding: 16px; background: linear-gradient(160deg, #1e3561 0%, #2a5298 100%);">
-      <!-- Nav bar simulado -->
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; padding-bottom:10px; border-bottom:1px solid rgba(255,255,255,0.1);">
-        <div style="width:60px;height:8px;background:#2A88E0;border-radius:4px;"></div>
-        <div style="display:flex;gap:10px;">
-          <div style="width:30px;height:6px;background:rgba(255,255,255,0.3);border-radius:3px;"></div>
-          <div style="width:30px;height:6px;background:rgba(255,255,255,0.3);border-radius:3px;"></div>
-          <div style="width:30px;height:6px;background:rgba(255,255,255,0.3);border-radius:3px;"></div>
-        </div>
-      </div>
-      <!-- Hero simulado -->
-      <div style="margin-bottom:14px;">
-        <div style="width:75%;height:10px;background:rgba(255,255,255,0.85);border-radius:4px;margin-bottom:7px;"></div>
-        <div style="width:55%;height:10px;background:rgba(255,255,255,0.85);border-radius:4px;margin-bottom:12px;"></div>
-        <div style="width:45%;height:7px;background:rgba(255,255,255,0.4);border-radius:3px;margin-bottom:6px;"></div>
-        <div style="width:35%;height:7px;background:rgba(255,255,255,0.4);border-radius:3px;margin-bottom:14px;"></div>
-        <div style="display:inline-block;background:#2A88E0;padding:6px 16px;border-radius:20px;font-size:0.65rem;color:white;font-weight:700;">Contactanos →</div>
-      </div>
-      <!-- Cards row -->
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;">
-        <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:10px;">
-          <div style="width:16px;height:16px;background:#2A88E0;border-radius:4px;margin-bottom:6px;"></div>
-          <div style="width:100%;height:5px;background:rgba(255,255,255,0.5);border-radius:2px;margin-bottom:4px;"></div>
-          <div style="width:80%;height:5px;background:rgba(255,255,255,0.25);border-radius:2px;"></div>
-        </div>
-        <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:10px;">
-          <div style="width:16px;height:16px;background:#2A88E0;border-radius:4px;margin-bottom:6px;"></div>
-          <div style="width:100%;height:5px;background:rgba(255,255,255,0.5);border-radius:2px;margin-bottom:4px;"></div>
-          <div style="width:70%;height:5px;background:rgba(255,255,255,0.25);border-radius:2px;"></div>
-        </div>
-        <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:10px;">
-          <div style="width:16px;height:16px;background:#2A88E0;border-radius:4px;margin-bottom:6px;"></div>
-          <div style="width:100%;height:5px;background:rgba(255,255,255,0.5);border-radius:2px;margin-bottom:4px;"></div>
-          <div style="width:90%;height:5px;background:rgba(255,255,255,0.25);border-radius:2px;"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Below browser: metrics strip -->
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:14px;">
-    <div style="background:rgba(255,255,255,0.1);border-radius:10px;padding:12px;text-align:center;">
-      <div style="font-size:1.3rem;font-weight:800;color:#fff;">100%</div>
-      <div style="font-size:0.65rem;color:rgba(255,255,255,0.55);text-transform:uppercase;letter-spacing:0.5px;">Responsive</div>
-    </div>
-    <div style="background:rgba(255,255,255,0.1);border-radius:10px;padding:12px;text-align:center;">
-      <div style="font-size:1.3rem;font-weight:800;color:#2A88E0;">A+</div>
-      <div style="font-size:0.65rem;color:rgba(255,255,255,0.55);text-transform:uppercase;letter-spacing:0.5px;">Performance</div>
-    </div>
-    <div style="background:rgba(255,255,255,0.1);border-radius:10px;padding:12px;text-align:center;">
-      <div style="font-size:1.3rem;font-weight:800;color:#4ade80;">✓</div>
-      <div style="font-size:0.65rem;color:rgba(255,255,255,0.55);text-transform:uppercase;letter-spacing:0.5px;">SEO listo</div>
-    </div>
-  </div>
-</div>
+            <!-- Browser mockup decorativo -->
+            <div style="background: #1a2744; border-radius: 14px; overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,0.4); width: 100%;">
+              <div style="background: #0f1a2e; padding: 10px 14px; display: flex; align-items: center; gap: 8px;">
+                <div style="display:flex; gap:5px;">
+                  <div style="width:10px;height:10px;border-radius:50%;background:#ff5f57;"></div>
+                  <div style="width:10px;height:10px;border-radius:50%;background:#ffbd2e;"></div>
+                  <div style="width:10px;height:10px;border-radius:50%;background:#28c840;"></div>
+                </div>
+                <div style="flex:1; background:#1e2d4a; border-radius:6px; padding: 4px 10px; font-size:0.7rem; color:rgba(255,255,255,0.4); text-align:center;">
+                  www.tuempresa.com
+                </div>
+              </div>
+              <div style="padding: 16px; background: linear-gradient(160deg, #1e3561 0%, #2a5298 100%);">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; padding-bottom:10px; border-bottom:1px solid rgba(255,255,255,0.1);">
+                  <div style="width:60px;height:8px;background:#2A88E0;border-radius:4px;"></div>
+                  <div style="display:flex;gap:10px;">
+                    <div style="width:30px;height:6px;background:rgba(255,255,255,0.3);border-radius:3px;"></div>
+                    <div style="width:30px;height:6px;background:rgba(255,255,255,0.3);border-radius:3px;"></div>
+                    <div style="width:30px;height:6px;background:rgba(255,255,255,0.3);border-radius:3px;"></div>
+                  </div>
+                </div>
+                <div style="margin-bottom:14px;">
+                  <div style="width:75%;height:10px;background:rgba(255,255,255,0.85);border-radius:4px;margin-bottom:7px;"></div>
+                  <div style="width:55%;height:10px;background:rgba(255,255,255,0.85);border-radius:4px;margin-bottom:12px;"></div>
+                  <div style="width:45%;height:7px;background:rgba(255,255,255,0.4);border-radius:3px;margin-bottom:6px;"></div>
+                  <div style="width:35%;height:7px;background:rgba(255,255,255,0.4);border-radius:3px;margin-bottom:14px;"></div>
+                  <div style="display:inline-block;background:#2A88E0;padding:6px 16px;border-radius:20px;font-size:0.65rem;color:white;font-weight:700;">Contactanos →</div>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;">
+                  <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:10px;">
+                    <div style="width:16px;height:16px;background:#2A88E0;border-radius:4px;margin-bottom:6px;"></div>
+                    <div style="width:100%;height:5px;background:rgba(255,255,255,0.5);border-radius:2px;margin-bottom:4px;"></div>
+                    <div style="width:80%;height:5px;background:rgba(255,255,255,0.25);border-radius:2px;"></div>
+                  </div>
+                  <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:10px;">
+                    <div style="width:16px;height:16px;background:#2A88E0;border-radius:4px;margin-bottom:6px;"></div>
+                    <div style="width:100%;height:5px;background:rgba(255,255,255,0.5);border-radius:2px;margin-bottom:4px;"></div>
+                    <div style="width:70%;height:5px;background:rgba(255,255,255,0.25);border-radius:2px;"></div>
+                  </div>
+                  <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:10px;">
+                    <div style="width:16px;height:16px;background:#2A88E0;border-radius:4px;margin-bottom:6px;"></div>
+                    <div style="width:100%;height:5px;background:rgba(255,255,255,0.5);border-radius:2px;margin-bottom:4px;"></div>
+                    <div style="width:90%;height:5px;background:rgba(255,255,255,0.25);border-radius:2px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:14px;">
+              <div style="background:rgba(255,255,255,0.1);border-radius:10px;padding:12px;text-align:center;">
+                <div style="font-size:1.3rem;font-weight:800;color:#fff;">100%</div>
+                <div style="font-size:0.65rem;color:rgba(255,255,255,0.55);text-transform:uppercase;letter-spacing:0.5px;">Responsive</div>
+              </div>
+              <div style="background:rgba(255,255,255,0.1);border-radius:10px;padding:12px;text-align:center;">
+                <div style="font-size:1.3rem;font-weight:800;color:#2A88E0;">A+</div>
+                <div style="font-size:0.65rem;color:rgba(255,255,255,0.55);text-transform:uppercase;letter-spacing:0.5px;">Performance</div>
+              </div>
+              <div style="background:rgba(255,255,255,0.1);border-radius:10px;padding:12px;text-align:center;">
+                <div style="font-size:1.3rem;font-weight:800;color:#4ade80;">✓</div>
+                <div style="font-size:0.65rem;color:rgba(255,255,255,0.55);text-transform:uppercase;letter-spacing:0.5px;">SEO listo</div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="about-float left">
-          <span>🏆</span>
+          <span aria-hidden="true">🏆</span>
           <div>
             <strong style="display: block; font-size: 0.9rem;">Presencia digital</strong>
             <span style="font-size: 0.75rem; color: #888; font-weight: 400;">para tu marca</span>
           </div>
         </div>
         <div class="about-float right">
-          <span>💬</span>
+          <span aria-hidden="true">💬</span>
           <div>
-            <strong style="display: block; font-size: 0.9rem;">Consultanos</strong>
+            <strong style="display: block; font-size: 0.9rem;">Demo sin costo</strong>
             <span style="font-size: 0.75rem; color: #888; font-weight: 400;">sin compromiso</span>
           </div>
         </div>
@@ -909,41 +1255,48 @@
 </section>
 
 <!-- CONSULT BANNER -->
-<div class="consult-banner">
+<div class="consult-banner" role="complementary">
   <div class="section-inner" style="text-align: center;">
     <h2>¿Tenés una idea o un proyecto en mente?</h2>
     <p>Consultanos sin dudarlo. No hace falta tener todo claro: te escuchamos, te explicamos todo en tu idioma y arrancamos juntos. El diagnóstico inicial y la demo son <strong>completamente sin cargo</strong>.</p>
-    <a href="#contacto" class="btn-primary">Pedí tu diagnóstico y demo →</a>
-    <small>Sin tecnicismos · Sin compromisos · Con respuesta rápida</small>
+    <a href="#contacto" class="btn-primary">Pedí tu demo y diagnóstico →</a>
+    <small>Sin tecnicismos · Sin compromisos · Respuesta en 24 horas</small>
   </div>
 </div>
 
 <!-- CONTACTO -->
-<section id="contacto">
+<section id="contacto" aria-labelledby="contacto-title">
   <div class="section-inner">
     <span class="section-label">Hablemos</span>
-    <h2 class="section-title">Llevá tu marca<br>al siguiente nivel</h2>
+    <h2 class="section-title" id="contacto-title">Llevá tu marca<br>al siguiente nivel</h2>
     <div class="contact-grid">
       <div class="contact-info">
         <h3>Estamos para acompañarte</h3>
-        <p>¿Tenés dudas? ¿Querés saber cómo podemos ayudarte? No hace falta que tengas todo claro todavía. Escribinos, contanos tu proyecto y arrancamos juntos.</p>
+        <p>¿Tenés dudas? ¿Querés saber cómo podemos ayudarte con tu <strong>página web</strong>, <strong>landing page</strong> o <strong>tienda online</strong>? Escribinos y lo trabajamos juntos desde donde estés.</p>
         <div class="contact-detail">
-          <div class="contact-detail-icon">📧</div>
+          <div class="contact-detail-icon" aria-hidden="true">📧</div>
           <div class="contact-detail-text">
             <strong>Email</strong>
             <a href="mailto:info@maxwebstudio.io">info@maxwebstudio.io</a>
           </div>
         </div>
         <div class="contact-detail">
-          <div class="contact-detail-icon">🌐</div>
+          <div class="contact-detail-icon" aria-hidden="true">🌐</div>
           <div class="contact-detail-text">
             <strong>Web</strong>
-            <a href="http://www.maxwebstudio.io" target="_blank">www.maxwebstudio.io</a>
+            <a href="https://www.maxwebstudio.io" target="_blank" rel="noopener">www.maxwebstudio.io</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon" aria-hidden="true">📍</div>
+          <div class="contact-detail-text">
+            <strong>Ubicación</strong>
+            <span style="color:var(--blue); font-weight:500;">Buenos Aires, Argentina</span>
           </div>
         </div>
 
-        <a href="https://wa.me/5491166824350?text=Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20MaxWebStudio%20y%20c%C3%B3mo%20pueden%20ayudarme%20con%20mi%20proyecto." target="_blank" class="btn-whatsapp">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <a href="https://wa.me/5491166824350?text=Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20MaxWebStudio%20y%20c%C3%B3mo%20pueden%20ayudarme%20con%20mi%20proyecto." target="_blank" rel="noopener" class="btn-whatsapp" aria-label="Escribinos por WhatsApp a MaxWebStudio">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
           </svg>
           Escribinos por WhatsApp
@@ -953,39 +1306,62 @@
       <div class="contact-form">
         <h3>Contanos tu proyecto ✍️</h3>
         <div class="form-group">
-          <label>Tu nombre</label>
-          <input type="text" id="f-nombre" placeholder="Ej: María González" />
+          <label for="f-nombre">Tu nombre</label>
+          <input type="text" id="f-nombre" name="nombre" placeholder="Ej: María González" autocomplete="name" required />
         </div>
         <div class="form-group">
-          <label>Tu email</label>
-          <input type="email" id="f-email" placeholder="nombre@tuempresa.com" />
+          <label for="f-email">Tu email</label>
+          <input type="email" id="f-email" name="email" placeholder="nombre@tuempresa.com" autocomplete="email" required />
         </div>
         <div class="form-group">
-          <label>¿En qué podemos ayudarte?</label>
-          <textarea id="f-mensaje" placeholder="Ej: Tengo un negocio de indumentaria y necesito una página web para mostrar mis productos..."></textarea>
+          <label for="f-tipo">¿Qué necesitás?</label>
+          <select id="f-tipo" name="tipo" style="width:100%;padding:12px 16px;border:2px solid #e8f0f9;border-radius:12px;font-family:'Poppins',sans-serif;font-size:0.9rem;color:var(--gray);background:#fafcff;outline:none;cursor:pointer;">
+            <option value="">Seleccioná una opción…</option>
+            <option value="institucional">Página web institucional</option>
+            <option value="landing">Landing page</option>
+            <option value="ecommerce">Tienda online / E-commerce</option>
+            <option value="branding">Identidad visual y branding</option>
+            <option value="automatizacion">Automatización a medida</option>
+            <option value="otro">Otro / No sé todavía</option>
+          </select>
         </div>
-        <p class="form-note">No hace falta tener todo claro antes de escribirnos. Podés contarnos apenas la idea o el problema que querés resolver, y lo trabajamos juntos desde ahí.</p>
-        <button class="btn-submit" onclick="submitForm()">Enviar consulta →</button>
-        <div class="form-success" id="form-success">
+        <div class="form-group">
+          <label for="f-mensaje">¿En qué podemos ayudarte?</label>
+          <textarea id="f-mensaje" name="mensaje" placeholder="Ej: Tengo un negocio de indumentaria y necesito una página web para mostrar mis productos..." required></textarea>
+        </div>
+        <p class="form-note">No hace falta tener todo claro antes de escribirnos. Podés contarnos apenas la idea o el problema que querés resolver.</p>
+        <button class="btn-submit" type="button" onclick="submitForm()">Enviar consulta →</button>
+        <div class="form-success" id="form-success" role="alert">
           ✅ ¡Gracias! Recibimos tu consulta y te contactamos pronto.
         </div>
       </div>
     </div>
   </div>
 </section>
+</main>
 
 <!-- FOOTER -->
-<footer>
+<footer role="contentinfo">
   <div class="footer-inner">
     <div class="footer-brand">
       <h3><span>MaxWeb</span>Studio</h3>
-      <p>Diseño & Desarrollo Web para emprendedores y PyMEs.</p>
+      <p>Diseño y desarrollo web para emprendedores y PyMEs de Argentina. Tu socio digital para crecer online.</p>
       <small>Tu web es tu vidriera digital. Hagamos que destaque.</small>
+      <div class="footer-social" aria-label="Redes sociales de MaxWebStudio">
+        <a href="https://www.instagram.com/maxwebstudio.ok" target="_blank" rel="noopener" aria-label="MaxWebStudio en Instagram" title="Seguinos en Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="mailto:info@maxwebstudio.io" aria-label="Enviar email a MaxWebStudio" title="Contacto por email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
     </div>
     <div class="footer-col">
       <h4>Servicios</h4>
       <ul>
         <li><a href="#servicios">Páginas institucionales</a></li>
+        <li><a href="#servicios">Landing pages</a></li>
+        <li><a href="#servicios">Tiendas online</a></li>
         <li><a href="#servicios">Identidad y branding</a></li>
         <li><a href="#servicios">Automatización</a></li>
         <li><a href="#servicios">Acompañamiento continuo</a></li>
@@ -995,26 +1371,31 @@
       <h4>Contacto</h4>
       <ul>
         <li><a href="mailto:info@maxwebstudio.io">info@maxwebstudio.io</a></li>
-        <li><a href="http://www.maxwebstudio.io">www.maxwebstudio.io</a></li>
-        <li><a href="https://wa.me/5491166824350">WhatsApp directo</a></li>
+        <li><a href="https://www.maxwebstudio.io" rel="noopener">www.maxwebstudio.io</a></li>
+        <li><a href="https://wa.me/5491166824350" target="_blank" rel="noopener">WhatsApp directo</a></li>
+        <li><a href="https://www.instagram.com/maxwebstudio.ok" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#proceso">Cómo trabajamos</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 MaxWebStudio · Diseño & Desarrollo Web</span>
-    <span>Tu partner digital · Siempre cerca, siempre disponible.</span>
+    <span>© 2026 MaxWebStudio · Diseño y Desarrollo Web · Buenos Aires, Argentina</span>
+    <span>
+      <a href="#hero" style="color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='var(--blue)'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">↑ Volver arriba</a>
+    </span>
   </div>
 </footer>
 
 <!-- WhatsApp flotante -->
-<a href="https://wa.me/5491166824350?text=Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20MaxWebStudio." target="_blank" class="wa-float" title="Escribinos por WhatsApp">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<a href="https://wa.me/5491166824350?text=Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20MaxWebStudio." target="_blank" rel="noopener" class="wa-float" aria-label="Contactar MaxWebStudio por WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
   </svg>
 </a>
+<span class="wa-float-label" aria-hidden="true">Escribinos por WhatsApp</span>
 
 <script>
-  // Smooth active nav
+  // ── Active nav on scroll ──
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
@@ -1023,12 +1404,25 @@
       if (window.scrollY >= s.offsetTop - 100) current = s.id;
     });
     navLinks.forEach(a => {
-      a.style.color = a.getAttribute('href') === '#' + current
-        ? '#2A88E0' : '';
+      a.style.color = a.getAttribute('href') === '#' + current ? '#2A88E0' : '';
     });
-  });
+  }, { passive: true });
 
-  // Form submit simulation
+  // ── Lazy load images ──
+  if ('IntersectionObserver' in window) {
+    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+    const imageObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('loaded');
+          imageObserver.unobserve(entry.target);
+        }
+      });
+    });
+    lazyImages.forEach(img => imageObserver.observe(img));
+  }
+
+  // ── Form submit ──
   function submitForm() {
     const nombre = document.getElementById('f-nombre').value.trim();
     const email = document.getElementById('f-email').value.trim();
@@ -1037,11 +1431,40 @@
       alert('Por favor completá todos los campos antes de enviar.');
       return;
     }
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Por favor ingresá un email válido.');
+      return;
+    }
     const success = document.getElementById('form-success');
     success.style.display = 'block';
+    success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     document.getElementById('f-nombre').value = '';
     document.getElementById('f-email').value = '';
     document.getElementById('f-mensaje').value = '';
+    document.getElementById('f-tipo').value = '';
+  }
+
+  // ── Animate on scroll (simple IntersectionObserver) ──
+  const animateEls = document.querySelectorAll('.service-card, .testimonio-card, .paso, .value-item');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    animateEls.forEach((el, i) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = `opacity 0.5s ease ${i * 0.07}s, transform 0.5s ease ${i * 0.07}s`;
+      observer.observe(el);
+    });
   }
 </script>
 
